@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* global */
+:root{
+  --bg: #0b0f13;
+  --panel: #0f1720;
+  --neon: #00d48b;
+  --muted: #94a3b8;
+}
+
+/* FULL BLACK PAGE */
+html, body {
+  background-color: #0e1217 !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;  /* removes left-right scroll */
+}
+
+
+
+html,body,#root {
+  height: 100%;
+  background: linear-gradient(180deg, rgba(11,15,19,1), rgba(8,10,12,1));
+  font-family: 'Inter', sans-serif;
+  color: #e6eef3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* layout */
+.section-inner { max-width: 1100px; margin-left:auto; margin-right:auto; padding-left:1rem; padding-right:1rem; }
+
+/* subtle panel */
+.panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.012));
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 12px;
+}
+
+/* neon helper */
+.text-neon { color: var(--neon); }
+.bg-neon { background-color: var(--neon); color: #04110b; }
+
+/* profile small glow */
+.profile-frame {
+  padding: 4px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, rgba(0,212,139,0.12), rgba(0,0,0,0));
+  box-shadow: 0 10px 40px rgba(0,212,139,0.08);
+}
+
+/* page anchor spacing fix (so top nav doesn't hide sections) */
+:target:before {
+  content: "";
+  display: block;
+  height: 88px; /* header height */
+  margin-top: -88px;
+}
+
+/* small responsive tweaks */
+@media (min-width: 768px) {
+  .Man-grid { display:grid; grid-template-columns: 1fr 320px; gap:32px; align-items:center; }
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --neon: #00ff9d;
+}
+
+.text-neon {
+  color: var(--neon);
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background: var(--neon);
+  color: black;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  border: 1px solid var(--neon);
+  color: var(--neon);
+  border-radius: 6px;
+}
+
+.panel {
+  padding: 12px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.07);
+}
+:root {
+  --accent: #00ff9d; /* neon green underline */
+}
+
