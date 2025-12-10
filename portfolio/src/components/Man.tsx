@@ -23,7 +23,7 @@ const Man: React.FC = () => {
 
           <div className="mt-6 flex gap-4">
            <a
-              href="/resume.pdf"
+              href="/VasanthJ_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-md bg-green-500 text-black text-sm font-medium hover:bg-green-400 transition"
