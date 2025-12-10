@@ -1,8 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar: React.FC = () => {
   const [active, setActive] = useState("home");
 
+  const sections = [
+    "home",
+    "skills",
+    "projects",
+    "experience",
+    "education",
+    "contact",
+  ];
+
+  // Auto detect section while scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + 150; // adjust offset
+
+      sections.forEach((sec) => {
+        const el = document.getElementById(sec);
+        if (!el) return;
+
+        const top = el.offsetTop;
+        const height = el.offsetHeight;
+
+        if (scrollPos >= top && scrollPos < top + height) {
+          setActive(sec);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // styling helpers
   const linkClass = (name: string) =>
     `relative pb-1 hover:text-[var(--accent)] transition ${
       active === name ? "text-[var(--accent)]" : ""
@@ -26,72 +58,24 @@ const Navbar: React.FC = () => {
           {/* Navigation */}
           <nav className="mt-2 hidden md:flex gap-6 text-sm text-muted">
 
-            {/* HOME */}
-            <a
-              href="#home"
-              onClick={() => setActive("home")}
-              className={linkClass("home")}
-            >
-              Home
-              <span className={underline("home")}></span>
-            </a>
-
-            {/* SKILLS */}
-            <a
-              href="#skills"
-              onClick={() => setActive("skills")}
-              className={linkClass("skills")}
-            >
-              Skills
-              <span className={underline("skills")}></span>
-            </a>
-
-            {/* PROJECTS */}
-            <a
-              href="#projects"
-              onClick={() => setActive("projects")}
-              className={linkClass("projects")}
-            >
-              Projects
-              <span className={underline("projects")}></span>
-            </a>
-
-            {/* EXPERIENCE */}
-            <a
-              href="#experience"
-              onClick={() => setActive("experience")}
-              className={linkClass("experience")}
-            >
-              Experience
-              <span className={underline("experience")}></span>
-            </a>
-
-            {/* EDUCATION */}
-            <a
-              href="#education"
-              onClick={() => setActive("education")}
-              className={linkClass("education")}
-            >
-              Education
-              <span className={underline("education")}></span>
-            </a>
-
-            {/* CONTACT */}
-            <a
-              href="#contact"
-              onClick={() => setActive("contact")}
-              className={linkClass("contact")}
-            >
-              Contact
-              <span className={underline("contact")}></span>
-            </a>
+            {sections.map((sec) => (
+              <a
+                key={sec}
+                href={`#${sec}`}
+                onClick={() => setActive(sec)}
+                className={linkClass(sec)}
+              >
+                {sec.charAt(0).toUpperCase() + sec.slice(1)}
+                <span className={underline(sec)}></span>
+              </a>
+            ))}
 
             {/* GITHUB */}
             <a
               href="https://github.com/Vasanth0303"
               target="_blank"
-              onClick={() => setActive("github")}
               className={linkClass("github")}
+              onClick={() => setActive("github")}
             >
               GitHub
               <span className={underline("github")}></span>
@@ -101,12 +85,13 @@ const Navbar: React.FC = () => {
             <a
               href="https://www.linkedin.com/in/vasanth-j-078853393"
               target="_blank"
-              onClick={() => setActive("linkedin")}
               className={linkClass("linkedin")}
+              onClick={() => setActive("linkedin")}
             >
               LinkedIn
               <span className={underline("linkedin")}></span>
             </a>
+
           </nav>
         </div>
       </div>

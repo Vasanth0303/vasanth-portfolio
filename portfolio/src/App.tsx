@@ -7,16 +7,21 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 
+import useFadeAnimation from "./components/Animation"; // <-- NEW
+
 function App() {
+  useFadeAnimation(); // <-- NEW
+
   return (
     <div className="bg-[#0b0f13] text-white min-h-screen">
       <Navbar />
-      <Man />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Education />
-      <Contact />
+
+      <div className="fade-up"><Man /></div>
+      <div className="fade-up"><Skills /></div>
+      <div className="fade-up"><Projects /></div>
+      <div className="fade-up"><Experience /></div>
+      <div className="fade-up"><Education /></div>
+      <div className="fade-up"><Contact /></div>
     </div>
   );
 }

@@ -98,3 +98,14 @@ html {
   --accent: #00ff9d; /* neon green underline */
 }
 
+/* Fade + Slide-Up Smooth Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
