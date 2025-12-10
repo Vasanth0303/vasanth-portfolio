@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "./components/Navbar";
 import Man from "./components/Man";
 import Skills from "./components/Skills";
