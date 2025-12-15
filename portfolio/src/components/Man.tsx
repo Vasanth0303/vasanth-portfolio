@@ -14,16 +14,14 @@ const Man: React.FC = () => {
           </h1>
 
           <p className="text-gray-300 mt-6 max-w-xl">
-            I am a MERN Stack Developer with hands-on experience in building authentication systems,
-            OTP verification flows, and full-stack applications using React, Node.js, Express, and MongoDB Atlas.
-            I started my career in the automobile industry as a Quality Control Trainee at Hyundai, but my passion
-            for web development motivated me to transition into the IT field. I focus on writing clean code,
-            building user-friendly interfaces, and integrating secure backend APIs.
+            MERN Stack Developer with hands-on experience in building secure authentication systems, OTP verification, and
+full-stack applications using React, Node.js, Express, and MongoDB Atlas. Transitioned from the automobile
+industry to IT, driven by a strong passion for web development, clean code, and user-friendly solutions
           </p>
 
           <div className="mt-6 flex gap-4">
            <a
-              href="/VasanthJ_Resume (3).pdf"
+              href="/VasanthJ_Resume (4).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-md bg-green-500 text-black text-sm font-medium hover:bg-green-400 transition"

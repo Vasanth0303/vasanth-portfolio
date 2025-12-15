@@ -5,7 +5,7 @@ const Experience = () => {
 
       <div className="bg-[#111] border border-gray-700 p-6 rounded-lg">
         <h3 className="text-green-400 text-xl font-semibold">
-          Manufacturing Engineer — Hyundai Motor India Pvt. Ltd.
+          Quality Trainee— Hyundai Motor India Pvt. Ltd.
         </h3>
 
         <p className="text-gray-400 mt-1">October 2022 – October 2023</p>
