@@ -13,7 +13,7 @@ const Projects = () => {
         <ul className="list-disc ml-6 mt-3 text-gray-400">
           <li>Tech Stack: React, Tailwind CSS, Node.js, Express.js, MongoDB Atlas, JWT, Nodemailer, Bcrypt
 </li>
-          <li> A secure full-stack authentication application that supports user signup, login, email-based OTP verification, and
+          <li> Description : A secure full-stack authentication application that supports user signup, login, email-based OTP verification, and
 passwword reset.
 </li>
           <li>Features: Email OTP verification, Password reset using OTP, JWT-based authentication, Secure password
@@ -42,7 +42,7 @@ logic
         <ul className="list-disc ml-6 mt-3 text-gray-400">
           <li> Tech Stack: React, TypeScript, Node.js, Express.js, MongoDB, JWT, Axios
 </li>
-          <li> A full-stack task management application that allows users to create, update, delete, and track tasks efficiently.
+          <li> Description : A full-stack task management application that allows users to create, update, delete, and track tasks efficiently.
 </li>
           <li>Features : User authentication, Add/Edit/Delete tasks, Task completion tracking, Priority levels
 (Low/Medium/High), Search & filter tasks, Task summary dashboard, Responsive UI</li>
@@ -55,6 +55,37 @@ state management
         <a
           className="inline-block mt-4 text-green-400 hover:underline"
           href="https://github.com/Vasanth0303/task-manager.git"
+          target="_blank"
+        >
+          👉 View on GitHub
+        </a>
+      </div>
+        <br />
+       <div className="bg-[#111] border border-gray-700 p-6 rounded-lg">
+        <h3 className="text-green-400 text-xl font-semibold">
+          Pizza Hut – Food Ordering Web Application
+        </h3>
+
+       
+
+        <ul className="list-disc ml-6 mt-3 text-gray-400">
+          <li> Tech Stack: React (TypeScript), CSS, Node.js, Express.js, MongoDB Atlas, JWT, Axios
+</li>
+          <li>Description: A full-stack food ordering web application inspired by Pizza Hut, allowing users to browse menu
+items, manage cart items, and place orders with secure authentication and a smooth user experience.
+</li>
+          <li>Features: JWT-based user authentication, Dynamic food menu listing, Add to cart, update quantity, and remove
+items, Slide-in cart with real-time price calculation, User-specific cart and order handling, Responsive UI with
+smooth animations, Secure backend APIs for cart and order management</li>
+          <li> My Role: Built REST APIs, designed frontend UI, implemented cart logic and state management, integrated
+frontend with backend, and handled authentication and data flow.
+</li>
+          
+        </ul>
+
+        <a
+          className="inline-block mt-4 text-green-400 hover:underline"
+          href="https://github.com/Vasanth0303/pizza-hut"
           target="_blank"
         >
           👉 View on GitHub
