@@ -85,7 +85,7 @@ frontend with backend, and handled authentication and data flow.
 
         <a
           className="inline-block mt-4 text-green-400 hover:underline"
-          href="https://github.com/Vasanth0303/pizza-hut"
+          href="https://github.com/Vasanth0303/pizza-hut.git"
           target="_blank"
         >
           👉 View on GitHub
