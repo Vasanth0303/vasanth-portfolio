@@ -19,8 +19,9 @@ function App() {
       <div className="fade-up"><Man /></div>
       <div className="fade-up"><Skills /></div>
       <div className="fade-up"><Projects /></div>
-      <div className="fade-up"><Experience /></div>
+      
       <div className="fade-up"><Education /></div>
+      <div className="fade-up"><Experience /></div>
       <div className="fade-up"><Contact /></div>
     </div>
   );

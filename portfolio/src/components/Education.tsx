@@ -1,7 +1,7 @@
 const Education = () => {
   return (
     <section id="education" className="py-20 w-10/12 mx-auto">
-      <h2 className="text-3xl font-bold mb-6">Education</h2>
+      <h2 className="text-3xl font-bold mb-6">Education  & Training</h2>
 
       <div className="bg-[#111] border border-gray-700 p-6 rounded-lg">
         <h3 className="text-green-400 text-xl font-semibold">
@@ -13,13 +13,13 @@ const Education = () => {
         </p>
 
         <h4 className="text-green-400 text-lg mt-6">
-          Full Stack MERN Developer (Course)
+          Full Stack MERN Developer (Training)
         </h4>
 
         <p className="text-gray-300">
           Apollo Computer Education Ltd., Kanchipuram  
           
-        </p>January 2025 – July 2025
+        </p>Jan 2025 – July 2025
 
         <ul className="list-disc ml-6 mt-3 text-gray-300 leading-relaxed">
           <li>Trained in building end-to-end MERN web applications using Python, HTML, CSS( Tailwind CSS),

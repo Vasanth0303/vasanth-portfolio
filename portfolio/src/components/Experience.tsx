@@ -8,7 +8,7 @@ const Experience = () => {
           Quality Trainee— Hyundai Motor India Pvt. Ltd.
         </h3>
 
-        <p className="text-gray-400 mt-1">October 2022 – October 2023</p>
+        <p className="text-gray-400 mt-1">Oct 2022 – Oct 2024</p>
 
         <ul className="list-disc ml-6 mt-3 text-gray-300 leading-relaxed">
           <li>Performed inspection and quality testing of components</li>
