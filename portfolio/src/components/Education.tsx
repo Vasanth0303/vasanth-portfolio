@@ -19,14 +19,18 @@ const Education = () => {
         <p className="text-gray-300">
           Apollo Computer Education Ltd., Kanchipuram  
           
-        </p>Jan 2025 – July 2025
+        </p>Jan 2025 – Aug 2025
 
         <ul className="list-disc ml-6 mt-3 text-gray-300 leading-relaxed">
-          <li>Trained in building end-to-end MERN web applications using Python, HTML, CSS( Tailwind CSS),
-React.js(both typescript and javascript), node.js, express.js, MongoDB, MySQL</li>
-          <li>Includes debugging real-time web page apps and resolving frontend/backend integration issues.
+          <li> Intensive hands-on training in end-to-end MERN stack development</li>
+          <li> Built full-stack applications using React, TypeScript, Node.js, Express, MongoDB
 </li>
-          
+        <li>
+           Implemented JWT authentication, Email OTP, password reset, and RESTful APIs
+        </li>
+          <li>
+            Worked with Git/GitHub, Postman, and followed SDLC and Agile practices
+          </li>
         </ul>
       </div>
     </section>

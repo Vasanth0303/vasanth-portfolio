@@ -14,9 +14,12 @@ const Man: React.FC = () => {
           </h1>
 
           <p className="text-gray-300 mt-6 max-w-xl">
-            MERN Stack Developer with hands-on experience in building secure authentication systems, OTP verification, and
-full-stack applications using React, Node.js, Express, and MongoDB Atlas. Transitioned from the automobile
-industry to IT, driven by a strong passion for web development, clean code, and user-friendly solutions
+            Junior MERN Stack Developer with hands-on experience in full-stack web development using React.js, Node.js,
+Express.js, and MongoDB. Experienced in building RESTful APIs, JWT-based authentication, OTP verification,
+CRUD operations, and responsive user interfaces. Strong understanding of frontend–backend integration, database
+design, and API testing using Postman. Brings 2 years of professional experience from a structured corporate
+environment, with proven skills in problem-solving, documentation, process adherence, and teamwork. Career
+transitioner from Mechanical Engineering, seeking an Associate / Junior Software Developer role.
           </p>
 
           <div className="mt-6 flex gap-4">
@@ -46,7 +49,7 @@ industry to IT, driven by a strong passion for web development, clean code, and 
         >
           <div className="p-1 bg-green-400/20 rounded-lg shadow-lg">
             <img
-              src="/profile.jpg"
+              src="/profile.jpeg"
               className="w-[300px] h-[400px] object-cover rounded-lg"
               alt="Vasanth"
             />

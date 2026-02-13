@@ -1,35 +1,39 @@
 const category = [
   {
+    title: "Programming Languages:",
+    items: ["Python" , " JavaScript (ES6+)", "  TypeScript"]
+  },
+  {
     title: "Frontend",
-    items: ["HTML", "CSS (Tailwind CSS)", "JavaScript (ES6+)", "React.js"]
+    items: [" React.js ", " React Hooks", "JReact Router DOM ", " HTML5 ", " TailwindCSS" , "Axios"]
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js"]
+    items: [" Node.js", " Express.js",  "Middleware"]
   },
   {
     title: "Database",
-    items: ["MySQL", "MongoDB", "Mongoose"]
+    items: [" MongoDB Atlas", " MySQL", " Mongoose ODM",  "Indexing"]
   },
   {
     title: "Tools",
-    items: ["Git", "GitHub", "VS Code", "Postman", "MySQL Workbench", "MongoDB Atlas"]
+    items: ["Git", "GitHub", " Visual Studio Code", "Postman"]
   },
   {
     title: "Concepts",
     items: [
-      "REST API Development",
-      "Cookies",
-      "JWT Authentication",
-      "Bcrypt Password Hashing",
-      "Nodemailer OTP",
-      "React Hooks",
-      "React Router"
+      " API Security",
+      " MVC Architecture",
+      "State Management ",
+      " Debugging",
+      " SDLC Basics",
+      " Agile Workflow",
+      
     ]
   },
   {
-    title: "Soft Skills",
-    items: ["Communication", "Problem Solving", "Analytical Thinking", "Adaptability"]
+    title: "Deployment",
+    items: ["Vercel", "Render", "MongoDB Atlas","Netlify"]
   }
 ];
 

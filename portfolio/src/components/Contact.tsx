@@ -16,7 +16,7 @@ const Contact = () => {
         <p className="text-gray-400">+91 6383049086</p>
 
         <p className="text-gray-300 mt-4">Location:</p>
-        <p className="text-gray-400">Kanchipuram, Tamil Nadu</p>
+        <p className="text-gray-400"> Bangalore, Karnataka</p>
 
         <div className="mt-4 flex gap-6">
           <a
